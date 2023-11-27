@@ -11,7 +11,7 @@ namespace MatchingEngine
     public:
         FOKOrder(int orderId, double price, int quantity);
 
-        void execute() override;
+        void execute(OrderBook* orderBook) override;
     };
 }
 

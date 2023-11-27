@@ -11,19 +11,13 @@ namespace MatchingEngine
     class OrderBook {
     public:
         // Function to add an order to the order book
-        void addOrder(Order* order) {
-            // Add order to the appropriate priority queue
-        }
+        void addOrder(Order* order);
 
         // Function to match orders and execute trades
-        void matchOrders() {
-            // Matching logic
-        }
+        void matchOrders();
 
         // Function to output the current state of the order book
-        void printOrderBook() {
-            // Output the current state of the priority queues
-        }
+        void printOrderBook();
 
     private:
         std::priority_queue<Order*, std::vector<Order*>, CompareOrder> buyQueue;
@@ -31,7 +25,7 @@ namespace MatchingEngine
     };
 
     struct CompareOrder {
-    bool operator()(const Order* lhs, const Order* rhs) const {
+    bool operator()(const Order* lhs, const Order* rhs) const; {
         // Comparison logic for Limit Orders
     }
 };
